@@ -2,8 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import '@fontsource-variable/dm-sans'
 import App from './App.jsx'
+import Admin from './Admin.jsx'
 import './styles.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode><App /></React.StrictMode>,
+  <React.StrictMode>{/^\/admin\/?$/.test(window.location.pathname) ? <Admin /> : <App />}</React.StrictMode>,
 )

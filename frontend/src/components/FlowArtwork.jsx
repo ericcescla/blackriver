@@ -24,7 +24,7 @@ export default function FlowArtwork() {
   return (
     <div className="flow-art" aria-hidden="true">
       <div className="art-grid" />
-      <div className="art-coordinates"><span>BR® — DIGITAL STUDIO</span><span>EST. PARA LO QUE VIENE</span></div>
+      <div className="art-coordinates"><span>RR — SEGURIDAD</span><span>CÁMARAS WEB E IP</span></div>
       <svg className="flow-sculpture" viewBox="-220 -205 440 410" fill="none">
         <defs>
           <linearGradient id="flow-fill" x1="-140" y1="-140" x2="150" y2="160" gradientUnits="userSpaceOnUse">
@@ -36,8 +36,8 @@ export default function FlowArtwork() {
           {strips.map((strip, i) => <path key={i} d={strip.path} fill="url(#flow-fill)" stroke={strip.depth > 0 ? '#94300e' : '#bf3c19'} strokeOpacity=".63" strokeWidth=".72" />)}
         </g>
       </svg>
-      <div className="floating-note note-code"><span className="note-symbol">&lt;/&gt;</span><div>Built with purpose.<small>Diseñado para avanzar.</small></div><span className="note-dot" /></div>
-      <div className="art-caption"><span className="crosshair">+</span><span>LA EVOLUCIÓN ES CONSTANTE.<br />NOSOTROS TAMBIÉN.</span><span className="art-caption-line" /></div>
+      <div className="floating-note note-code"><span className="note-symbol">◎</span><div>Seguridad conectada.<small>Atención técnica personal.</small></div><span className="note-dot" /></div>
+      <div className="art-caption"><span className="crosshair">+</span><span>TU ESPACIO.<br />TU TRANQUILIDAD.</span><span className="art-caption-line" /></div>
     </div>
   )
 }
